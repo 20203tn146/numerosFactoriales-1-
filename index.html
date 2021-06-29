@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>examenEjercicios(1)</title>
+</head>
+<body>
+    <br /> <br />
+    <div align="center">
+        <input type="text" id="numeroIngresado"/>
+        <br /> <br/>
+        <button type="button" onclick="calcularfactorial()">Calcular factorial</button>
+        <br /><br />
+        <label id="textoResultado"></label>
+        </div>
+
+        <script>
+            function calcularfactorial(){
+                var numero=document.getElementById('numeroIngresado').value;
+                var resultado=1;
+                for(var i=1; i<=numero; i++){
+                    resultado=resultado*i;
+                }
+                document.getElementById('textoResultado').innerHTML=`el numero factorial del numero ingresado ${numero} es: ${resultado}`;
+
+            }
+        </script>
+
+</body>
+</html>
